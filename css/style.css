@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color:rgb(225, 223, 235);
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif ;
+    font-size:14pt;
+}
+header
+{
+    background-color:rgb(94,85,143);
+    color:whitesmoke;
+    font-family: 'Iceland', cursive;
+}
+
+header div.title
+{
+    padding:100px 0px;
+    text-align:center;
+    font-size:60pt;      
+}
+header nav
+{
+    padding:10px 0px;
+    font-size:30pt;
+    text-align: center;      
+   
+}
+header nav ui li 
+{
+    display: inline-block;
+    width:150px;   
+    text-align:center;
+}
+
+section
+{
+    margin-top:30px;
+}
+
+section div.title
+{
+    text-align:center;
+}
+
+section div.title:after {
+    content: "";
+    display: block;
+    width:30px;
+    height:1px;
+    background-color:#ccc;
+    margin:25px auto;
+}
+
+h2
+{
+    color:rgb(94,85,143);
+    font-family : 'Iceland', cursive;
+    font-size:30pt;
+}
+
+img.profile
+{
+    border-radius: 50%;
+    height:250px;
+    width:250px;
+}
+
+div.flex
+{
+    display:flex;
+    flex-wrap:wrap;
+    margin:0 auto;
+    width:80%;
+}
+
+div.profile_desc
+{
+    width:600px;
+}
+
+i.link_qiita
+{
+    font-size:25pt;
+}
+
+div.profile_desc p
+{
+    line-height: 18pt;
+}
