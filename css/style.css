@@ -12,7 +12,7 @@ header
 {
     background-color:rgb(94,85,143);
     color:whitesmoke;
-    font-family: 'Iceland', cursive;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 header div.title
@@ -26,12 +26,12 @@ header nav
     padding:10px 0px;
     font-size:30pt;
     text-align: center;      
-   
 }
+
 header nav ui li 
 {
     display: inline-block;
-    width:150px;   
+    width:200px;   
     text-align:center;
 }
 
@@ -57,28 +57,35 @@ section div.title:after {
 h2
 {
     color:rgb(94,85,143);
-    font-family : 'Iceland', cursive;
+    font-family: 'Rajdhani', sans-serif;
     font-size:30pt;
-}
-
-img.profile
-{
-    border-radius: 50%;
-    height:250px;
-    width:250px;
 }
 
 div.flex
 {
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     margin:0 auto;
-    width:80%;
+    width:60%;
+}
+
+div.profile_img
+{
+    padding:10px;
+    width:260px;
+    min-width:260px;
+}
+
+div.profile_img img
+{
+    border-radius: 50%;
+    width:100%;
 }
 
 div.profile_desc
 {
-    width:600px;
+    width:auto;
+    padding:10px;
 }
 
 i.link_qiita
