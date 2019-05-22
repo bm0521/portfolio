@@ -30,19 +30,30 @@
 
     <link href="css/html5reset-1.6.1.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+        $(function(){
+
+            $(".caption").click(function(e) {
+
+                var _target = $("#" + $(this).attr("desc"));
+
+                if (_target.css("display") == 'none') {
+                    $(".work_desc").hide(300);
+                }
+                _target.slideToggle(300);
+            })
+        });
+        
+    </script>
 </head>
     <body>
         <header>
             <div class="title"> 
                 <h1>Portfolio by KOMORIYA SUGURU</h1>
             </div>
-            <nav>
-                <ui>
-                    <li><i class="fas fa-fw fa-meh"></i>AboutMe</li>
-                    <li><i class="fas fa-fw fa-cog"></i>Skills</li>
-                    <li><i class="fas fa-fw fa-folder-open"></i>Works</li>
-                </ui>
-            </nav>
         </header>
 
         <section>
@@ -191,32 +202,131 @@
 
         </section>
     
-        <section>
+        <section class="work">
             <div class="title">
                 <h2><i class="fas fa-fw fa-folder-open"></i>Works</h2>
             </div>
             <div class="flex work">
                 <div class="wrap">
                     <img src="image/work1.jpg">
-                    <div class="caption">基本的なCRUD機能の実装（Laravel)</div>
+                    <div class="caption" desc="work1_desc">基本的なCRUD機能の実装（Laravel)</div>
                 </div>
                 <div class="wrap">
                     <img src="image/work2.jpg">
-                    <div class="caption">ポートフォリオ</div>
+                    <div class="caption" desc="work2_desc">ポートフォリオ</div>
                 </div>
                 <div class="wrap">
                     <img src="image/work3.jpg">
-                    <div class="caption">MY MISSION</div>
+                    <div class="caption" desc="work3_desc">MY MISSION</div>
                 </div>
+            </div>
+            <div id="work1_desc" class="work_desc">
+                <h3>基本的なCRUD機能の実装（Laravel)</h3>
+                <table>
+                    <tr>
+                        <th>URL</th>
+                        <td>
+                            <a href="http://bm0521-laravel.herokuapp.com/" target="_blank">
+                                http://bm0521-laravel.herokuapp.com/
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>ソースコード</th>
+                        <td>
+                            <a href="https://github.com/bm0521/demo-laravel" target="_blank">
+                                https://github.com/bm0521/demo-laravel
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>説明</th>
+                        <td>
+                            Laravelの基本的なCRUDを実装
+                            <ui>
+                                <li>ログイン機能</li>
+                                <li>ユーザー一覧機能(CRUD)</li>
+                                <li>ユーザーに紐づく記事一覧機能(CRUD)</li>
+                            </ui>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>使用技術</th>
+                        <td>
+                            Laravel5.7, MySQL(PostgresSQL), Heroku, Github 
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="work2_desc" class="work_desc">
+                <h3>ポートフォリオ</h3>
+                <table>
+                    <tr>
+                        <th>URL</th>
+                        <td>
+                            <a href="https://bm0521.github.io/portfolio/" target="_blank">
+                                https://bm0521.github.io/portfolio/
+                            </a>(このサイト)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>ソースコード</th>
+                        <td>
+                            <a href="https://github.com/bm0521/portfolio" target="_blank">
+                                https://github.com/bm0521/portfolio
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>説明</th>
+                        <td>
+                            ポートフォリオサイト。習得技術や実績を記載していきます。
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>使用技術</th>
+                        <td>
+                            HTML5, CSS3, JQuery
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="work3_desc" class="work_desc">
+                <h3>MY MISSION</h3>
+                <table>
+                    <tr>
+                        <th>URL</th>
+                        <td>
+                            非公開(開発中)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>ソースコード</th>
+                        <td>
+                            非公開
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>説明</th>
+                        <td>
+                            現在自社で開発しているHRサービス<br />
+                            「ミッション」を軸に、人と人とを繋げるサービスを目指しています
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>担当業務</th>
+                        <td>
+                            DB論理設計、サーバーサイドの実装<br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>使用技術</th>
+                        <td>
+                            Ruby on Rails, Vue.js, Docker, AWS
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </section>        
-        
-
-
-        
-
-
-        hello, world
-
-
     </body>
 </html>

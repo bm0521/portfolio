@@ -1,4 +1,5 @@
-*{
+*
+{
     box-sizing: border-box;
 }
 
@@ -8,10 +9,11 @@ body
     font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif ;
     font-size:14pt;
 }
+
 header
 {
     background-color:rgb(94,85,143);
-    color:whitesmoke;
+    color:rgb(245,245,245);
     font-family: 'Rajdhani', sans-serif;
 }
 
@@ -21,6 +23,7 @@ header div.title
     text-align:center;
     font-size:60pt;      
 }
+
 header nav
 {
     padding:10px 0px;
@@ -37,7 +40,10 @@ header nav ui li
 
 section
 {
-    margin-top:30px;
+    margin-top:40px;
+    margin-left:auto;
+    margin-right:auto;
+    width:60%;
 }
 
 section div.title
@@ -66,8 +72,6 @@ div.flex
     display:flex;
     flex-wrap:nowrap;
     justify-content:space-between;
-    margin:0 auto;
-    width:60%;
 }
 
 div.profile_img
@@ -101,9 +105,9 @@ div.profile_desc p
 
 div.skills{
     margin:0 auto;
-    width:40%;
+    width:50%;
     background-color:rgb(233, 233, 245);
-    border:solid #CCC 1px;
+    border:solid rgb(204, 204, 204) 1px;
     padding:10px;
     font-size:12pt;
     line-height: 15pt;
@@ -127,9 +131,15 @@ div.skills table td:nth-child(3)
 
 div.work div.wrap
 {
-    width:250px;
-    height:150px;
+    width:350px;
+    height:210px;
     position: relative;
+}
+
+div.work div.wrap img
+{
+    width:100%;
+    height:100%;
 }
 
 div.work div.wrap div.caption
@@ -140,19 +150,61 @@ div.work div.wrap div.caption
     top:0px;
     left:0px;
     z-index:1;
+    padding-top:90px;
+    line-height:15pt;
+    text-align:center;
+    font-weight:bold;
     opacity:0;
-}
+} 
 
 div.work div.wrap div.caption:hover
 {
-    background-color:#CCC;
+    background-color:rgb(204, 204, 204);
     cursor: pointer;
-    opacity:0.8;
+    opacity:0.9;
     color:rgb(94,85,143);
 }
 
-div.work div.wrap img
-{
+div.work_desc{
+    margin:20px auto;
+    width:60%;
+    background-color:rgb(233, 233, 245);
+    border:solid rgb(204, 204, 204) 1px;
+    padding:20px;
+    font-size:12pt;
+    line-height: 15pt;
+    text-align: center;
+    display: none;
+}
+
+div.work_desc table{
+    margin-top:20px;
     width:100%;
-    height:100%;
+}
+
+div.work_desc table th,
+div.work_desc table td{
+    padding:10px;
+    border-top:solid rgb(204, 204, 204) 1px;
+}
+
+div.work_desc table th
+{
+    text-align: center;
+}
+
+div.work_desc table td:nth-child(2)
+{
+    text-align:left;
+}
+
+h3
+{
+    color:rgb(94,85,143);
+    font-size:14pt;
+}
+
+section.work
+{
+    padding-bottom:100px;
 }
